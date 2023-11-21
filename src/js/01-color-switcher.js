@@ -10,7 +10,7 @@ refs.btnStop.addEventListener('click', changeColorStop)
 function changeColor() {
     refs.btnStart.disabled = true,
         refs.btnStop.disabled = false
-    const int = setInterval(() => {
+    int = setInterval(() => {
         refs.body.style.backgroundColor = getRandomHexColor()
     }, 1000
     )
