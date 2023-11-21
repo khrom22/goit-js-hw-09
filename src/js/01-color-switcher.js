@@ -7,7 +7,7 @@ refs.btnStop.disabled = true
 refs.btnStart.addEventListener('click', changeColor)
 refs.btnStop.addEventListener('click', changeColorStop)
 
-
+setInterval(int)
 function changeColor() {
     refs.btnStart.disabled = true,
         refs.btnStop.disabled = false,
