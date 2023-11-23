@@ -15,6 +15,7 @@ const DELAY_TIMER = 1000;
 let int = null;
 let currentDate = null;
 let selectedDate = null;
+let deltaTime = null;
 btnStart.disabled = true
 
 const options = {
@@ -34,10 +35,10 @@ const options = {
 flatpickr(inputDate, options)
 
 function startTimer() {
-    intervalId = setInterval(() => {
+    int = setInterval(() => {
         currentDate = new Date().getTime();
         if (selectedDate - currentDate <= 1000) {
-            clearInterval(intervalId);
+            clearInterval(int);
             btnStart.disabled = true;
             inputDate.disabled = false;
             return
