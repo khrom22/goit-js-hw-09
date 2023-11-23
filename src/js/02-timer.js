@@ -78,8 +78,6 @@ function convertMs(ms) {
     return { days, hours, minutes, seconds };
 }
 
-
-
 timer.style.display = 'flex';
 timer.style.gap = '20px';
 timer.style.backgroundColor = 'yellow';
