@@ -26,10 +26,10 @@ function handleCreatePromise(e) {
   let stepValue = Number(refs.step.value);
   let amountValue = Number(refs.amount.value);
 
-  for (let i = 0; i <= amountValue; i += 1) {
+  for (let i = 0; i < amountValue; i += 1) {
     let promiseDelay = delayValue + stepValue * i;
 
-    createPromise(i, promiseDelay)
+    createPromise(i + 1, promiseDelay)
       .then(({ position, delay }) => {
         Notify.success(`✅ Fulfilled promise ${position} in ${delay} ms`);
       })
